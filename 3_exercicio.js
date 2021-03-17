@@ -3,3 +3,8 @@ funcionário num mês, e o quanto ele recebe por hora. O retorno da função dev
 X", em que X é o quanto o funcionário ganhou no mês.
 Exemplos:
 calcularSalario(150, 40.5) // retornará "Salário igual a R$ 6075"*/
+
+const calcularSalario = (a,b) =>{
+    return `Salário igual a R$ ${a*b}`
+}
+console.log(calcularSalario(150,40.5))
