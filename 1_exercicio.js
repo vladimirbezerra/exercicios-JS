@@ -5,8 +5,8 @@ cumprimentar("Leonardo") // retornará "Olá, Leonardo!"
 cumprimentar("Maria") // retornará "Olá, Maria!"
 */
 
-const cumprimento = (nome) =>  
+const cumprimentar = (nome) =>  
 {
     return `Olá, ${nome}!`
 }
-console.log(cumprimento(Maria))
+console.log(cumprimentar("Maria"))
