@@ -6,15 +6,16 @@ maiorOuIgual(5, 1) // retornará false
 */
 
 const maiorOuIgual = (a, b) => {
+    
     if (a > b) {
-        return "false"
+        return false
     } else if (a < b) {
-        return "true"
+        return true
     }
     else if (a === b) {
-        return "true"
+        return true
     } else {
-        return "false"
+        return false
     }
 
 }
