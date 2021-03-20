@@ -12,7 +12,19 @@ inverso("programação") // retornará "booleano ou números esperado, mas o par
 
 const inverso =(b) => {
     let a = typeof b
-    if (b == false){
+
+    if (a == 'boolean'){
+        
+        return !b
+    } else if (a == 'number') {
+        return b*-1
+    } else 
+    {
+        return `booleano ou números esperado, mas o parâmetro é do tipo ${a}`
+    }
+
+
+    /*if (b == false){
         return true
     } else if (b === true){
         return false
@@ -20,6 +32,8 @@ const inverso =(b) => {
         return "booleano ou números esperado, mas o parâmetro é do tipo string"
     } else {
         return b*-1
-    }
+    }*/
 }
-console.log(inverso(-2000))
+let f = inverso(200)
+console.log(f)
+
