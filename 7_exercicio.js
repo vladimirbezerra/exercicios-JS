@@ -12,12 +12,11 @@ estaEntre(3, 150, 3, true) // retornará true
 
 const estaEntre = (numero, minimo, maximo, inclusivo) => {
 
-    if (numero >= minimo && numero <= maximo && inclusivo == true) {
+   if (numero >= minimo && numero <= maximo && inclusivo == true) {
         return true
-    } else if (inclusivo == true) {
-        return true
-    } else {
-        return false 
+    } else
+    {
+        return numero > minimo && numero < maximo
     }
 
 } 
