@@ -4,10 +4,8 @@ Exemplos:
 filtrarNumeros(["Javascript", 1, "3", "Web", 20]) // retornará [1, 20]
 filtrarNumeros(["a", "c"]) // retornará []
  */
+//var filtered = [12, 5, 8, 130, 44].filter(isBigEnough);
 
-const filtrarNumeros = (filtro) => {
-    
+const filtrarNumeros = ["Javascript", 1, "3", "Web", 20].filter((x)=>{return typeof(x) == 'number'})
 
-}
-
-console.log(filtrarNumeros(["Javascript", 1, "3", "Web", 20]))
+console.log(filtrarNumeros)
