@@ -23,9 +23,7 @@ const removerPropriedade = (obj,nomePropriedade) =>
 {
 
        delete obj[nomePropriedade]
-       console.log(obj)
+       return obj
 }
 
-//removerPropriedade({id: 20, nome: "caneta", descricao: "Não preenchido" }, "descricao")
-
-removerPropriedade({a: 1, b: 2}, "a")
+console.log(removerPropriedade({a: 1, b: 2}, "a"))
