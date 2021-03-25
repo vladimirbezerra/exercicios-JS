@@ -6,6 +6,12 @@ filtrarNumeros(["a", "c"]) // retornará []
  */
 //var filtered = [12, 5, 8, 130, 44].filter(isBigEnough);
 
-const filtrarNumeros = ["Javascript", 1, "3", "Web", 20].filter((x)=>{return typeof(x) == 'number'})
+const filtrarNumeros = (valor)=> {
+    const  numeros = valor.filter((x)=>{return typeof(x) == 'number'})
+    return numeros
+}
 
-console.log(filtrarNumeros)
+
+console.log(filtrarNumeros([12, 5, 8, 130, 44]))
+console.log(filtrarNumeros(["Javascript", 1, "3", "Web", 20]))
+console.log(filtrarNumeros(["a", "c"]))
