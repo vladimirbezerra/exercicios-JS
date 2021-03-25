@@ -17,18 +17,19 @@ preco: 12000
 }) // irá retornar [["codigo", 11111], ["preco", 12000]]
  */
 
-const objetoParaArray = {
-    nome: "Maria",
-    profissao: "Desenvolvedora de software"
-    }
+const objetoParaArray = (valor) => {
+    return Object.entries(valor)
+}
 
-    /*for (var key in objetoParaArray) {
+console.log(objetoParaArray({nome: "Maria",
+profissao: "Desenvolvedora de software"}))
+console.log(objetoParaArray({codigo: 11111,
+    preco: 12000}))
+//console.log(Object.keys(objetoParaArray))
+
+/*for (var key in objetoParaArray) {
         if (objetoParaArray.hasOwnProperty(key)) {
             console.log([key + " -> " + objetoParaArray[key]]);
         }
     }*/
-
-console.log(Object.entries(objetoParaArray))
-//console.log(Object.values(objetoParaArray))
-//console.log(Object.keys(objetoParaArray))
 
