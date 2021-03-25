@@ -7,8 +7,12 @@ receberSomenteOsParesDeIndicesPares([1, 2, 3, 4]) // retornará []
 receberSomenteOsParesDeIndicesPares([10, 70, 22, 43]) // retornará [10, 22]
  */
 
-const IndicesPares = [1, 2, 3, 4,6,20,89]
+const receberSomenteOsParesDeIndicesPares = (valor) => {
+    const indicesPares = valor.filter(value => value%2==0)
+    return indicesPares
+}
 
-receberSomenteOsParesDeIndicesPares = IndicesPares.filter(value => value%2==0)
+ 
 
-console.log(receberSomenteOsParesDeIndicesPares)
+console.log(receberSomenteOsParesDeIndicesPares([1, 2, 3, 4]))
+console.log(receberSomenteOsParesDeIndicesPares([10, 70, 22, 43]))
