@@ -27,3 +27,5 @@ const removerPropriedade = (obj,nomePropriedade) =>
 }
 
 console.log(removerPropriedade({a: 1, b: 2}, "a"))
+
+
