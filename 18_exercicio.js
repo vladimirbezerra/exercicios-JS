@@ -12,11 +12,24 @@ despesasTotais([
 {nome: "Macbook Pro", categoria: "Eletrônicos", preco: 30999.90}
 ]) // retornará 34599.89
  */
-
-const despesas = [
+const somaPreco = (valor) => {
+  let a = 0
+  const somaReduce = valor.reduce(function(valorAcumulativo,valorArray){
+    valorAcumulativo.preco += valorArray.preco
+    return a = valorAcumulativo
+},{preco:0})
+return somaReduce.preco
+}
+const despesas1 = 
+  [
     {nome: "Jornal online", categoria: "Informação", preco: 89.99},
-    {nome: "Cinema", categoria: "Entretenimento", preco: 150}]
-    //const somaReduce = somarNumeros.reduce(function(valorAcumulativo,valorArray){
-      //  valorAcumulativo.soma += valorArray
-const despesasTotais = (valor) => {}
-despesasTotais(despesas)
+    {nome: "Cinema", categoria: "Entretenimento", preco: 150}
+  ]
+const despesas2 = 
+  [
+    {nome: "Galaxy S20", categoria: "Eletrônicos", preco: 30599.99},
+    {nome: "Macbook Pro", categoria: "Eletrônicos", preco: 30999.90}
+  ]
+    
+
+console.log(somaPreco(despesas1))
