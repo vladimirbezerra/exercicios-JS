@@ -36,7 +36,7 @@ const calcularArea = (item) => {
     return areaDoTriangulo(item.base,item.altura)
     
 }
-
+ const p = 0
 const areaDoTriangulo = (base,altura) => (base*altura/2).toFixed(2)
 
 const area = {base: 10, altura:15}
