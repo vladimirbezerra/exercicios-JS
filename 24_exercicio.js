@@ -7,18 +7,13 @@ contarCaractere("c", "Conhece-te a ti mesmo") // retornará 1
  */
 
 const contarCaractere = (caracter,string) => {
-    let i = 0
-    let cont = 0
-    while (i < string.length) {
-        if (caracter == string[i]) {
-            cont ++
-        }
-
-        i++
-    }
-    return cont
+    
+    let arrayString =  string.split("")
+        
+    return  arrayString.filter(item => item == caracter).length
+    
 }
 
 
-
+//let string1 = ("r", "A sorte favorece os audazes")
 console.log(contarCaractere("r", "A sorte favorece os audazes"))
